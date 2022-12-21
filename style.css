@@ -1,0 +1,29 @@
+* {
+    font-family: Montserrat, sans-serif;
+}
+
+body {
+    max-width: 900px;
+    margin: 40px auto 0;
+    background-color: #212121;
+    color: white;
+}
+
+.grid, .inline-grid {
+    font-size: 26px;
+    padding: 24px 42px;
+    border-radius: 4px;
+}
+
+.grid {
+    display: grid;
+
+    background-color: darkolivegreen;
+    margin-bottom: 20px;
+}
+
+.inline-grid {
+    display: inline-grid;
+
+    background-color: #532f6b;
+}
