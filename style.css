@@ -95,22 +95,36 @@ ul {
 
 .main {
     grid-area: main;
-
+    padding: 30px 15px;
+    display: grid;
+    grid-template: 1fr / 1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
 }
 
 .sidebar {
+    grid-column: 2 / 3;
 }
 
 .sidebar__menu {
 }
 
-.sidebar__list {
+.sidebar__list li:not(:last-child) {
+    margin-bottom: 15px;
 }
 
 .sidebar__link {
+    color: black;
+    font-size: 20px;
+    transition: color .3s ease-in;
+
+}
+
+.sidebar__link:hover {
+    color: #537ba9;
 }
 
 .content {
+    grid-column: 3 / 4;
+    padding-left: 30px;
 }
 
 .content__title {
@@ -163,6 +177,9 @@ ul {
 
 .footer {
     grid-area: footer;
+    display: grid;
+    grid-template: 1fr / 1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
+
     background-color: #e7e7e7;
 }
 
