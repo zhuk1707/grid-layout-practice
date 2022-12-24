@@ -4,36 +4,167 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Grid Layout Practice</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="grid">
-        <div class="grid__body">
-            <div class="grid__item">1</div>
-            <div class="grid__item">2</div>
-            <div class="grid__item">3</div>
-            <div class="grid__item">4</div>
-            <div class="grid__item">5</div>
-            <div class="grid__item">6</div>
-        </div>
+<div class="wrapper">     <!--grid-container-->
 
-        <h2>Area names</h2>
-        <div class="grid__wrapper">
-            <div class="grid__header">logo</div>
-            <div class="grid__side">
-                <dl>topic #1</dl>
-                <dl>topic #2</dl>
-                <dl>topic #3</dl>
-                <dl>topic #4</dl>
+    <header class="header">
+        <a href="" class="header__logo"></a>
+
+        <nav class="header__menu">
+            <ul class="header__list">
+                <li>
+                    <a href="" class="header__link">Home</a>
+                </li>
+                <li>
+                    <a href="" class="header__link">Blog</a>
+                </li>
+                <li>
+                    <a href="" class="header__link">About</a>
+                </li>
+                <li>
+                    <a href="" class="header__link">Contacts</a>
+                </li>
+            </ul>
+
+            <div class="header__burger-menu">
+                <span></span>
             </div>
-            <div class="grid__content">
-                <h3>Content</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, non!</p>
-                <p>A enim fuga ullam. Aliquam animi asperiores, cumque cupiditate dignissimos earum inventore, ipsam iure magni natus optio quam quos sapiente, soluta veniam.</p>
-            </div>
+        </nav>
+    </header>
+
+    <main class="main"><!--grid-element & grid-container-->
+        <aside class="sidebar">
+            <nav class="sidebar__menu">
+                <ul class="sidebar__list">
+                    <li>
+                        <a href="" class="sidebar__link">Anime</a>
+                    </li>
+                    <li>
+                        <a href="" class="sidebar__link">Films</a>
+                    </li>
+                    <li>
+                        <a href="" class="sidebar__link">Music</a>
+                    </li>
+                    <li>
+                        <a href="" class="sidebar__link">Photos</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section class="content">
+                <h1 class="content__title">Merchandise</h1>
+
+                <section class="content__gallery gallery">
+                    <h2 class="gallery__title">Moodboard</h2>
+
+                    <div class="gallery__items">
+                        <div class="gallery__item  gallery__item_big">
+                            <img src="src/img/01.jpg" alt="Image"
+                                 class="gallery__image">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="src/img/02.jpg" alt="Image"
+                                 class="gallery__image">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="src/img/03.jpg" alt="Image"
+                                 class="gallery__image">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="src/img/04.jpg" alt="Image"
+                                 class="gallery__image">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="src/img/05.jpg" alt="Image"
+                                 class="gallery__image">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="src/img/06.jpg" alt="Image"
+                                 class="gallery__image">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="src/img/07.jpg" alt="Image"
+                                 class="gallery__image">
+                        </div>
+                        <div class="gallery__item gallery__item_big">
+                            <img src="src/img/08.jpg" alt="Image"
+                                 class="gallery__image">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="src/img/09.jpg" alt="Image"
+                                 class="gallery__image">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="src/img/10.jpg" alt="Image"
+                                 class="gallery__image">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content__products products">
+                    <h2 class="products__title">Products</h2>
+
+                    <div class="products__items">
+                        <div class="products__item">
+                            <a href="" class="products__image">
+                                <img src="src/img/t01.jpg" alt="">
+                            </a>
+                            <a href="" class="products__name">T-Shirt</a>
+                            <a href="" class="products__button">Buy</a>
+                        </div>
+                        <div class="products__item">
+                            <a href="" class="products__image">
+                                <img src="src/img/t02.jpg" alt="">
+                            </a>
+                            <a href="" class="products__name">T-Shirt</a>
+                            <a href="" class="products__button">Buy</a>
+                        </div>
+                        <div class="products__item">
+                            <a href="" class="products__image">
+                                <img src="src/img/t03.jpg" alt="">
+                            </a>
+                            <a href="" class="products__name">T-Shirt</a>
+                            <a href="" class="products__button">Buy</a>
+                        </div>
+                        <div class="products__item">
+                            <a href="" class="products__image">
+                                <img src="src/img/t03.jpg" alt="">
+                            </a>
+                            <a href="" class="products__name">T-Shirt</a>
+                            <a href="" class="products__button">Buy</a>
+                        </div>
+                        <div class="products__item">
+                            <a href="" class="products__image">
+                                <img src="src/img/t02.jpg" alt="">
+                            </a>
+                            <a href="" class="products__name">T-Shirt</a>
+                            <a href="" class="products__button">Buy</a>
+                        </div>
+                        <div class="products__item">
+                            <a href="" class="products__image">
+                                <img src="src/img/t01.jpg" alt="">
+                            </a>
+                            <a href="" class="products__name">T-Shirt</a>
+                            <a href="" class="products__button">Buy</a>
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__copyright">
+            Grid Layout Practice, 2022
         </div>
-    </div>
+        <div class="footer__text">
+            Nostrum nulla!
+        </div>
+    </footer>
+</div>
 </body>
 </html>

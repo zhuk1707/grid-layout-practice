@@ -1,62 +1,9 @@
 * {
-    font-family: Montserrat, sans-serif;
+    box-sizing: border-box;
 }
 
 body {
-    max-width: 900px;
-    margin: 0 auto 0;
-    background-color: #212121;
-    color: white;
+    font-family: "Inter", sans-serif;
 }
 
 /*****************************************/
-
-.grid {
-    margin: 40px 0;
-}
-
-.grid__body {
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-}
-
-.grid__item {
-    text-align: center;
-    padding: 20px;
-    border: 1px dashed grey;
-}
-
-.grid__wrapper > div {
-    padding: 10px;
-    /*border: 1px dashed grey;*/
-}
-
-.grid__wrapper {
-    display: grid;
-    grid-template-areas:
-            "header header header"
-            "side content content";
-}
-
-.grid__header {
-    grid-area: header;
-    background-color: seagreen;
-}
-
-.grid__side {
-    grid-area: side;
-}
-
-dl {
-    font-family: monospace;
-    color: #00ff6f;
-    padding: 4px 60px 6px 11px;
-    border-radius: 4px;
-    background-color: #3a3a3a;
-}
-
-.grid__content {
-    grid-area: content;
-}
