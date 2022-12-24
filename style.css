@@ -182,7 +182,7 @@ ul {
     column-gap: 30px;
     row-gap: 50px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-auto-rows: 1fr;
+    grid-auto-rows: 1fr ;
 }
 
 .products__item {
@@ -236,10 +236,12 @@ ul {
     grid-area: footer;
     display: grid;
     grid-template: 1fr / 1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
+    padding: 15px;
 
     background-color: #e7e7e7;
 }
 
 .footer > div {
     color: grey;
+    grid-column: 2 / 3;
 }
